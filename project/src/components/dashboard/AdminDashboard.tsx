@@ -3,26 +3,27 @@ import { StatCard } from './StatsCard';
 import { Card } from '../ui/Card';
 import { Building2, DollarSign, TrendingUp, Users } from 'lucide-react';
 
-export const AdminDashboard: React.FC = () => {
+export const Admin: React.FC = () => {
   // Mock data for the admin dashboard
   const businessData = [
-    { id: 1, name: 'OBite Hotel', revenue: '$12,500', status: 'active', lastPayment: '2025-03-15' },
-    { id: 2, name: 'Tushibe Restaurant', revenue: '$8,750', status: 'active', lastPayment: '2025-03-12' },
-    { id: 3, name: 'KM Laundry', revenue: '$3,200', status: 'pending', lastPayment: '2025-02-28' },
-    { id: 4, name: 'Kiwanja Textiles', revenue: '$5,800', status: 'active', lastPayment: '2025-03-10' },
+    { id: 1, name: 'OBite Hotel', revenue: 'Ksh. 12,500', status: 'active', lastPayment: '2025-03-15' },
+    { id: 2, name: 'Tushibe Restaurant', revenue: 'Ksh. 8,750', status: 'active', lastPayment: '2025-03-12' },
+    { id: 3, name: 'KM Laundry', revenue: 'Ksh. 3,200', status: 'pending', lastPayment: '2025-02-28' },
+    { id: 4, name: 'Kiwanja Textiles', revenue: 'Ksh. 5,800', status: 'active', lastPayment: '2025-03-10' },
+    { id: 5, name: 'UoN Food Outlet', revenue: 'Ksh.8,500', status: 'active', lastPayment: '2025-05-10' },
   ];
 
   return (
     <div className="space-y-6">
       <div>
-        <h2 className="text-2xl font-bold text-gray-800 mb-4">Admin Dashboard</h2>
-        <p className="text-gray-600">Monitor and manage all businesses and users from this central dashboard.</p>
+        <h2 className="text-2xl font-bold text-gray-800 mb-4">Admin</h2>
+        <p className="text-white-600">This dashboard monitors and manages all businesses and users </p>
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <StatCard
           title="Total Businesses"
-          value="4"
+          value="5"
           icon={<Building2 size={24} />}
           color="blue"
         />
